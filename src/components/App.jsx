@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react'
 export default function App() {
 
     const [clicks, setClicks] = useState(() => {
-      const savedClicks = window.localStorage.getItem(JSON.stringify("saved-clicks"));
+      const savedClicks = window.localStorage.getItem("saved-clicks");
       
     if (savedClicks !== null) {
       return JSON.parse(savedClicks);
